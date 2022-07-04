@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="cssformulario.css" media="screen">
+
+        <title>minha loja de instrumentos</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Loja de instrumentos</h1>
+            <br>
+        </div>
+
+        <form action="" method="get">
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+            <div class="campo">
+                <label for="endereco"><strong>Endereço:</strong></label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Em qual instrumento você está interessado?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="violao" checked>Violão
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="teclado">Teclado
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="bateria">Bateria
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="valores"><strong>Valores: </strong></label>
+                <select id="valores" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>1000-2000</option>
+                  <option>2000-3000</option>
+                  <option>3000 acima</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione a forma de pagamento:</strong></label><br><br>
+                    <input type="checkbox" id="forma1" name="forma1" value="PicPay">
+                    <label for="tecnologia1"> PicPay</label>
+                    <input type="checkbox" id="forma2" name="forma2" value="Pix">
+                    <label for="tecnologia2"> Pix</label>
+                    <input type="checkbox" id="forma3" name="forma3" value="PayPal">
+                    <label for="tecnologia3"> PayPal</label>
+                    <input type="checkbox" id="forma4" name="forma4" value="Debito">
+                    <label for="tecnologia4"> Débito</label>
+                    <input type="checkbox" id="forma5" name="forma5" value="Credito">
+                    <label for="tecnologia5"> Crédito</label>
+                    <input type="checkbox" id="forma6" name="forma6" value="Boleto">
+                    <label for="tecnologia6"> Boleto</label>
+                    <input type="checkbox" id="forma7" name="forma7" value="Dinheiro">
+                    <label for="tecnologia7"> Dinheiro</label>
+                </div>
+            </fieldset><br>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
